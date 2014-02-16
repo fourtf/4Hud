@@ -3,6 +3,8 @@
 
 A TF2 Hud editor for Windows
 
+Project file is 4Hud/4Hud/4Hud.csproj
+
 Welcome to the 4Plug source code.
 Written in C# for .net 2.0 and created with Visual Studio 2010
 

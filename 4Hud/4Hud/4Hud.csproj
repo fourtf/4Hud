@@ -205,7 +205,6 @@
     <None Include="Resources\SnaptoGrid_324.png" />
     <None Include="Resources\SendtoBack_10681.png" />
     <None Include="Resources\BringtoFront_10687.png" />
-    <Content Include="README.txt" />
     <Content Include="x.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

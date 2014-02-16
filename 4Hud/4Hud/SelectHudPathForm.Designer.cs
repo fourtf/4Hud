@@ -73,17 +73,19 @@
             // btnCustomFolder
             // 
             this.btnCustomFolder.Image = global::_4Hud.Properties.Resources.openFolder;
-            this.btnCustomFolder.Location = new System.Drawing.Point(9, 46);
+            this.btnCustomFolder.Location = new System.Drawing.Point(6, 46);
             this.btnCustomFolder.Name = "btnCustomFolder";
-            this.btnCustomFolder.Size = new System.Drawing.Size(23, 23);
+            this.btnCustomFolder.Size = new System.Drawing.Size(60, 23);
             this.btnCustomFolder.TabIndex = 3;
+            this.btnCustomFolder.Text = "select";
+            this.btnCustomFolder.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnCustomFolder.UseVisualStyleBackColor = true;
             this.btnCustomFolder.Click += new System.EventHandler(this.btnCustomFolder_Click);
             // 
             // lblCustom
             // 
             this.lblCustom.AutoSize = true;
-            this.lblCustom.Location = new System.Drawing.Point(38, 51);
+            this.lblCustom.Location = new System.Drawing.Point(72, 51);
             this.lblCustom.Name = "lblCustom";
             this.lblCustom.Size = new System.Drawing.Size(52, 13);
             this.lblCustom.TabIndex = 2;
@@ -117,15 +119,17 @@
             this.btnDirectFolder.Image = global::_4Hud.Properties.Resources.openFolder;
             this.btnDirectFolder.Location = new System.Drawing.Point(6, 21);
             this.btnDirectFolder.Name = "btnDirectFolder";
-            this.btnDirectFolder.Size = new System.Drawing.Size(23, 23);
+            this.btnDirectFolder.Size = new System.Drawing.Size(60, 23);
             this.btnDirectFolder.TabIndex = 3;
+            this.btnDirectFolder.Text = "select";
+            this.btnDirectFolder.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnDirectFolder.UseVisualStyleBackColor = true;
             this.btnDirectFolder.Click += new System.EventHandler(this.btnDirectFolder_Click);
             // 
             // lblDirect
             // 
             this.lblDirect.AutoSize = true;
-            this.lblDirect.Location = new System.Drawing.Point(35, 26);
+            this.lblDirect.Location = new System.Drawing.Point(72, 26);
             this.lblDirect.Name = "lblDirect";
             this.lblDirect.Size = new System.Drawing.Size(45, 13);
             this.lblDirect.TabIndex = 2;
@@ -177,7 +181,7 @@
             this.MaximizeBox = false;
             this.MaximumSize = new System.Drawing.Size(1920, 237);
             this.MinimizeBox = false;
-            this.MinimumSize = new System.Drawing.Size(0, 237);
+            this.MinimumSize = new System.Drawing.Size(16, 237);
             this.Name = "SelectHudPathForm";
             this.Text = "Select your hud path";
             this.groupCustom.ResumeLayout(false);
