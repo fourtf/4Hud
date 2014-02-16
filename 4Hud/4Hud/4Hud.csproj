@@ -1,0 +1,219 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1BDF3CEF-8C22-43A3-A849-7A6531AD9627}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>_4Hud</RootNamespace>
+    <AssemblyName>4Hud</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>out3.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FastColoredTextBox, Version=2.10.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>.\FastColoredTextBox.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ColorStyle.cs" />
+    <Compile Include="DragTabControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Editor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ITFControl.cs" />
+    <Compile Include="KeyChooser.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="KeyChooser.Designer.cs">
+      <DependentUpon>KeyChooser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LaunchPresent.cs" />
+    <Compile Include="Line.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Line.Designer.cs">
+      <DependentUpon>Line.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainMenuDesigner.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainMenuDesigner.Designer.cs">
+      <DependentUpon>MainMenuDesigner.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OpenFolderDialog.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SelectHudPathForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SelectHudPathForm.Designer.cs">
+      <DependentUpon>SelectHudPathForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Settings.cs" />
+    <Compile Include="SettingsDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SettingsDialog.Designer.cs">
+      <DependentUpon>SettingsDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SettingsEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SettingsEditor.designer.cs">
+      <DependentUpon>SettingsEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SettingsItem.cs" />
+    <Compile Include="SplitFCTB.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SplitFCTB.Designer.cs">
+      <DependentUpon>SplitFCTB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TabContent.cs" />
+    <Compile Include="TF.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TFKey.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TFLabel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TFObject.cs" />
+    <Compile Include="Transpanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Transpanel.Designer.cs">
+      <DependentUpon>Transpanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TreeView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Win32.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ZipStorer.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KeyChooser.resx">
+      <DependentUpon>KeyChooser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainMenuDesigner.resx">
+      <DependentUpon>MainMenuDesigner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="SelectHudPathForm.resx">
+      <DependentUpon>SelectHudPathForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SettingsDialog.resx">
+      <DependentUpon>SettingsDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SettingsEditor.resx">
+      <DependentUpon>SettingsEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SplitFCTB.resx">
+      <DependentUpon>SplitFCTB.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\refresh.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\openFolder.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\find.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\startwithoutdebugging_6556.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NewRunSetting_8775.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\saveAll.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="FastColoredTextBox.dll" />
+    <Content Include="out3.ico" />
+    <None Include="Resources\SnaptoGrid_324.png" />
+    <None Include="Resources\SendtoBack_10681.png" />
+    <None Include="Resources\BringtoFront_10687.png" />
+    <Content Include="README.txt" />
+    <Content Include="x.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
